@@ -1,9 +1,23 @@
 <html>
   <head>
     <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Let's play some Rock Paper Scissors</h1>
+    <div class="buttons">
+      <button class="btns" id="rock"><img src="images/rock.png" alt="rock image"/></button>
+      <button class="btns" id="paper"><img src="images/paper.png" alt="paper image"/></button>
+      <button class="btns" id="scissors"><img src="images/scissors.png" alt="scissors image"/></button>
+    </div>
+
+    <div class="results">
+      <p id="player_score">Player Score:</p>
+      <p id="comp_score">Computer Score:</p>
+      <p id="output"></p>
+      <button class="reset">Reset</button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

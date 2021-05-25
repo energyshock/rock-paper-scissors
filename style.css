@@ -16,7 +16,7 @@ body,html {
 
 .container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* background-color: dodgerblue; */
     /* align-items: center; */
 }

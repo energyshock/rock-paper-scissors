@@ -1,4 +1,62 @@
-img {
+ img {
     width: 100px;
     height: 125px;
+}
+html {
+    background-image: url(images/annie-spratt-xvU-X0GV9-o-unsplash.jpg);
+    background-size: cover;
+    font-size: 10px;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: dodgerblue; */
+    /* align-items: center; */
+}
+
+.container > .score, .buttons, .output, .resetDiv {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.resetDiv {
+      
+}
+
+.buttons {
+    flex-wrap: wrap;
+    height: auto;
+    /* background-color: tomato; */
+}
+
+.output {
+    background-color: greenyellow;
+    margin: 10px 0;
+}
+
+.buttons > button {
+    /* background-color: green; */
+    margin: 5px;
+    border: none;
+    width: 200px;
+    border: .4rem solid black;
+    border-radius: .5rem;
+    background: rgba(0,0,0,0.4);
+    transition: all .07s ease;
+}
+
+.score > div {
+    background-color: tomato;
+    padding: 5px;
+    margin: 5px;
+    width: 160px;
+    text-align: center;
 }

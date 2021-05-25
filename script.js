@@ -4,6 +4,7 @@ let playerValue;
 let compValue;
 const buttons = document.querySelectorAll('.btns');
 const resetButton = document.querySelector('.reset');
+console.log(buttons + resetButton)
 
 let playerScore = 0;
 let compScore = 0;

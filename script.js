@@ -26,7 +26,6 @@ function getPlayerChoice() {
     } else if (playerChoice === 'scissors') {
         playerValue = 2;
     }
-    // console.log(playerChoice + " " + playerValue);
     compValue = getCompChoice();
     playGame();
     
@@ -34,7 +33,6 @@ function getPlayerChoice() {
 
 function getCompChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
-    // console.log("compValue: " + randomNumber);
 
     if (randomNumber == 0) {
         compChoice = "rock";
@@ -54,7 +52,6 @@ function playRound() {
     ];
 
     let result = winnningNumbersArray[playerValue][compValue];
-    console.log("Result: " + result);
 
     if (result == 0) {
         output.textContent = `It's a tie! You chose ${playerChoice} and the computer chose ${compChoice}.`;
@@ -65,7 +62,6 @@ function playRound() {
         output.textContent = `You win! You chose ${playerChoice} and the computer chose ${compChoice}.`;
         playerScore++;
     }
-
 }
 
 function playGame() {
